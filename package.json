@@ -21,5 +21,16 @@
   "bugs": {
     "url": "https://github.com/YolkPie/yolk-cli.github.io/issues"
   },
-  "homepage": "https://github.com/YolkPie/yolk-cli.github.io#readme"
+  "homepage": "https://github.com/YolkPie/yolk-cli.github.io#readme",
+  "devDependencies": {
+    "@vuepress/theme-vue": "^1.2.0",
+    "cz-conventional-changelog": "^3.0.2",
+    "validate-commit-msg": "^2.14.0",
+    "vuepress": "^1.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
