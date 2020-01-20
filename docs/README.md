@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /favicon.png
-actionText: 起步 →
+actionText: 快速上手 →
 actionLink: /guide/introduction/
 features:
 - title: 使用简洁
@@ -16,7 +16,7 @@ features:
   details: 各种项目模板完全是可配置的，如果现有脚手架的配置不能满足您的需求，您可进行扩展。
 - title: 面向未来
   details: 为现代浏览器轻松产出原生的 ES2015 代码。
-footer: MIT Licensed | Copyright © 2020-present YolkPie
+footer: MIT Licensed | Copyright © 2019-present YolkPie
 ---
 
 ## 起步

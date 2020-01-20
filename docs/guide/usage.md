@@ -1,7 +1,7 @@
 # 使用
 运行以下命令来创建一个新项目：
-```shell
-$ yolk init
+```bash
+yolk init
 ```
 你会被提示选取一个项目模板:
 <img :src="$withBase('/cli-init.png')" alt="yolk-cli">
