@@ -12,7 +12,9 @@ module.exports = {
     editLinkText: '在 GitHub 上编辑此页',
     nav: [
       { text: '快速上手', link: '/guide/introduction/' },
-      { text: '配套设施', link: '/support/' }
+      { text: '配套设施', link: '/support/' },
+      { text: 'Change Log', link: '/change/' },
+      { text: '关于我们', link: '/about/' }
     ],
     sidebar: {
       '/guide/': [
@@ -44,7 +46,10 @@ module.exports = {
       ],
       '/support/': [
         '/support/utils'
-      ]
+      ],
+      '/about/': [
+        '/about/team'
+      ],
     }
   }
 }
