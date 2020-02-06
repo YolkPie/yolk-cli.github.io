@@ -51,12 +51,13 @@ npm run build:prod    # 生产环境打包
 npm run build:yufa    # 预发环境打包
 npm run build:test    # 测试环境打包
 npm run dist          # 本地预览打包文件
+npm run lint          # 修复不符合规范的代码
 ```
 ### 本地开发
 
 - 1. `npm install`(安装package.json下项目依赖)；
 - 2. `npm run serve`(安装成功后启动项目)；
-- 3. 项目在本地`localhost:80`端口运行。
+- 3. 项目在本地`localhost:80`端口运行， 默认运行在`80`端口，你也可以在`vue.config.js/devServer`中修改运行的端口；
 - 4. 编译打包：
   - npm run build:prod：生产环境打包
   - npm run build:yufa：预发环境打包
