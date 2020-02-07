@@ -1,11 +1,13 @@
 language: node_js
 node_js:
   - lts/*
-cache: yarn
+cache:
+  directories:
+    - node_modules
 install:
-  - yarn # npm install
+  - npm install
 script:
-  - yarn build # npm run build
+  - npm run build
 after_success:
   - cd ./deploy
   - git init
