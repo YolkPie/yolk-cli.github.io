@@ -7,12 +7,16 @@ cache:
 install:
   - npm install
 script:
-  - git clone "https://${GH_TOKEN}@${GH_REF}"
   - npm run build
-after_success:
+after_script:
+  - git clone "https://${GH_TOKEN}@${GH_REF}"
+  - cp -rf dist/* yolkpie.github.io/yolk-cli/
   - cd ./yolkpie.github.io
   - git config --global user.name "${U_NAME}"
   - git config --global user.email "${U_EMAIL}"
-  - git add -A
-  - git commit -m 'travis-ci yolk-cli'
-  - git push --quiet --force "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+  - git add .
+  - git commit -m 'travis-ci auto build yolk-cli'
+  - git push origin "${P_BRANCH}"
+branches:
+  only:
+    - master
