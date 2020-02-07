@@ -25,6 +25,7 @@
   "devDependencies": {
     "@vuepress/theme-vue": "^1.2.0",
     "cz-conventional-changelog": "^3.0.2",
+    "husky": "^4.2.1",
     "validate-commit-msg": "^2.14.0",
     "vuepress": "^1.2.0"
   },

@@ -4,6 +4,13 @@ module.exports = {
   theme: '@vuepress/theme-vue',
   base: '/yolk-cli/', // 部署站点的基础路径
   dest: 'dist', // 指定 vuepress build 的输出目录。如果传入的是相对路径，则会基于 process.cwd() 进行解析。
+  markdown: {
+    anchor: { permalink: false },
+    toc: { includeLevel: [1, 2] },
+    config: md => {
+      md.use(require('markdown-it-include'), './')
+    }
+  },
   themeConfig: {
     repo: 'YolkPie/yolk-cli',
     docsRepo: 'YolkPie/yolk-cli.github.io',
@@ -45,7 +52,32 @@ module.exports = {
         '/guide/contribution'
       ],
       '/support/': [
-        '/support/utils'
+        {
+          title: 'Yolk Utils',
+          collapsable: false,
+          path: '/support/utils/',
+          children: [
+            '/support/utils/dom',
+            '/support/utils/bom',
+            '/support/utils/string',
+            '/support/utils/array',
+            '/support/utils/math',
+            '/support/utils/event',
+            '/support/utils/url',
+            '/support/utils/cache',
+            '/support/utils/global',
+            '/support/utils/tools',
+            '/support/utils/functional',
+            '/support/utils/formatDate',
+            '/support/utils/floatCalculate',,
+            '/support/utils/rem',
+            '/support/utils/cookies',
+            '/support/utils/getType',
+            '/support/utils/getDecimalLen',
+            '/support/utils/replaceByMath',
+            '/support/utils/axios-jsonp'
+          ]
+        }
       ]
     }
   }
