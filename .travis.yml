@@ -7,13 +7,10 @@ cache:
 install:
   - npm install
 script:
-  - mkdir -p deploy
-  - cd ./deploy
   - git clone "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
-  - cd ..
   - npm run build
 after_success:
-  - cd ./deploy
+  - cd ./yolkpie.github.io
   - git config --global user.name "${U_NAME}"
   - git config --global user.email "${U_EMAIL}"
   - git add -A

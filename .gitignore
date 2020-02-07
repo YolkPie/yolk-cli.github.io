@@ -3,6 +3,7 @@ node_modules
 docs/.vuepress/dist
 dist
 deploy
+yolkpie.github.io
 
 # local env files
 .env.local

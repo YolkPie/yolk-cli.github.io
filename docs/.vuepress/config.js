@@ -3,7 +3,7 @@ module.exports = {
   description: '前端项目脚手架',
   theme: '@vuepress/theme-vue',
   base: '/yolk-cli/', // 部署站点的基础路径
-  dest: 'deploy/yolk-cli', // 指定 vuepress build 的输出目录。如果传入的是相对路径，则会基于 process.cwd() 进行解析。
+  dest: 'yolkpie.github.io/yolk-cli', // 指定 vuepress build 的输出目录。如果传入的是相对路径，则会基于 process.cwd() 进行解析。
   themeConfig: {
     repo: 'YolkPie/yolk-cli',
     docsRepo: 'YolkPie/yolk-cli.github.io',
