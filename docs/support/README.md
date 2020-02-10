@@ -5,4 +5,4 @@
 ### 配套设施
 | 名称 | 状态 | 描述 |
 | :------ | :------ | :------ |
-| [Yolk Utils](utils.md) | <img src="https://img.shields.io/npm/v/@yolkpie/utils"> | 前端工具类库 |
+| [Yolk Utils](utils/) | <img src="https://img.shields.io/npm/v/@yolkpie/utils"> | 前端工具类库 |

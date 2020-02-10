@@ -54,7 +54,7 @@ module.exports = {
       '/support/': [
         {
           title: 'Yolk Utils',
-          collapsable: false,
+          collapsable: true,
           path: '/support/utils/',
           children: [
             '/support/utils/dom',
@@ -69,7 +69,7 @@ module.exports = {
             '/support/utils/tools',
             '/support/utils/functional',
             '/support/utils/formatDate',
-            '/support/utils/floatCalculate',,
+            '/support/utils/floatCalculate',
             '/support/utils/rem',
             '/support/utils/cookies',
             '/support/utils/getType',
