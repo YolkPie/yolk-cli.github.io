@@ -9,11 +9,18 @@ install:
 script:
   - npm run build
 after_success:
+  - git config --global user.name "${U_NAME}"
+  - git config --global user.email "${U_EMAIL}"
   - git clone "https://${GH_TOKEN}@${GH_REF}"
   - cp -rf dist/* yolkpie.github.io/yolk-cli/
   - cd ./yolkpie.github.io
-  - git config --global user.name "${U_NAME}"
-  - git config --global user.email "${U_EMAIL}"
+  - git add .
+  - git commit -m 'travis-ci auto build yolk-cli'
+  - git push origin "${P_BRANCH}"
+  - cd ../
+  - git clone "https://${U_NAME2}:${CO_TOKEN}@${CO_REF}"
+  - cp -rf dist/* yolkpie.net/yolk-cli/
+  - cd ./yolkpie.net
   - git add .
   - git commit -m 'travis-ci auto build yolk-cli'
   - git push origin "${P_BRANCH}"
